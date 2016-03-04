@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var s = require('../jstring');
+var s = require('../src/js-string');
 
 describe('trimStart', function() {
 
