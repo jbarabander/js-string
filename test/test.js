@@ -3,10 +3,11 @@ var s = require('../jstring');
 
 describe('trimStart', function() {
 
-    it('should remove the a string from the beginning of the of the string', function() {
+    it('should remove a string from the beginning of another string', function() {
 
         var originalString = 'This is a string was multiple words';
-        var newString = s.trimStart(originalString, 'This is a ');
+        var stringToRemove = 'This is a ';
+        var newString = s.trimStart(originalString, stringToRemove);
 
         assert.equal(newString, 'string was multiple words');
 
